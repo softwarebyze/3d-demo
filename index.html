@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Dimensions Sample for burger</title>
+    <script src="https://dimensions-3d-viewer.cloudinary.com/all.js"></script>
+    <script src="https://dimensions-tag.cloudinary.com/all.js"></script>
+</head>
+<style>
+    * {
+        font-family: Arial, sans-serif;
+        margin: 1rem;
+    }
+
+    label {
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <label>Burger</label>
+    <div id="three-d-viewer" style="height: 400px" data-d8s-type="3d" data-d8s-id="burger001">
+    </div>
+
+    <label>Boba and Cookies</label>
+    <div id="three-d-viewer" style="height: 400px" data-d8s-type="3d" data-d8s-id="bobaAndCookies0001">
+    </div>
+
+
+    <script>
+        //initialize the Dimensions tag
+        const d8sApi = initDimensions({
+            //your account name:
+            account: "test3d",
+            //asset types used on the page: 
+            viewers: ["3D"],
+        });     
+    </script>
+</body>
+
+</html>
